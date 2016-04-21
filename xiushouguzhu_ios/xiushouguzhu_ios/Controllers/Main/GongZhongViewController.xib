@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GongZhongViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hrS-SM-EyZ">
+                    <rect key="frame" x="0.0" y="203" width="320" height="203"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="公众平台" translatesAutoresizingMaskIntoConstraints="NO" id="ZCI-yH-OhU">
+                            <rect key="frame" x="70" y="12" width="180" height="180"/>
+                            <animations/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="180" id="p8h-sh-oLV"/>
+                                <constraint firstAttribute="width" constant="180" id="wEi-tV-mhO"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <animations/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="centerX" secondItem="ZCI-yH-OhU" secondAttribute="centerX" id="OfF-Er-TG9"/>
+                        <constraint firstAttribute="centerY" secondItem="ZCI-yH-OhU" secondAttribute="centerY" id="Q8u-aB-8Ua"/>
+                        <constraint firstAttribute="height" constant="203" id="xkn-VT-ug2"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="    微信公众平台二维码" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GET-Ul-KgI">
+                    <rect key="frame" x="0.0" y="159" width="320" height="44"/>
+                    <animations/>
+                    <color key="backgroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="ZcN-2z-cmf"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GVE-rF-zCt">
+                    <rect key="frame" x="27" y="20" width="266" height="120"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="120" id="eRc-2X-pCl"/>
+                    </constraints>
+                    <string key="text">攻城狮说目前大微信封锁了外部软件二维码扫一扫加关注的功能，
+所以客官现在不可以扫我哦，不过没关系，在公众号搜索栏手动输入
+                     ，就可以关注我了，
+喵~要记得来找我哦~~                              </string>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Handy-Help" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Q8-jr-mHQ">
+                    <rect key="frame" x="29" y="94" width="89" height="21"/>
+                    <animations/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.96470588239999999" green="0.81568627449999997" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="GVE-rF-zCt" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="1Su-bF-178"/>
+                <constraint firstItem="hrS-SM-EyZ" firstAttribute="top" secondItem="GET-Ul-KgI" secondAttribute="bottom" id="27Z-oq-Yh5"/>
+                <constraint firstItem="GVE-rF-zCt" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="27" id="J1G-uH-Qih"/>
+                <constraint firstItem="GET-Ul-KgI" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="LqW-Fc-wue"/>
+                <constraint firstAttribute="trailing" secondItem="GVE-rF-zCt" secondAttribute="trailing" constant="27" id="Wqi-sd-lLC"/>
+                <constraint firstAttribute="trailing" secondItem="GET-Ul-KgI" secondAttribute="trailing" id="Yx3-7q-JYM"/>
+                <constraint firstAttribute="centerX" secondItem="GET-Ul-KgI" secondAttribute="centerX" id="dhf-qZ-ROq"/>
+                <constraint firstAttribute="trailing" secondItem="hrS-SM-EyZ" secondAttribute="trailing" id="iGs-pb-HeA"/>
+                <constraint firstItem="hrS-SM-EyZ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="sah-wh-V6H"/>
+                <constraint firstItem="GET-Ul-KgI" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="159" id="uYv-J3-pRQ"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+            <point key="canvasLocation" x="523" y="337"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="公众平台" width="176" height="176"/>
+    </resources>
+</document>

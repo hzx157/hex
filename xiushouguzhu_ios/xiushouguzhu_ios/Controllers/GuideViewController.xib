@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GuideViewController">
+            <connections>
+                <outlet property="ivBg" destination="aKA-oi-WI3" id="RCd-jw-Fea"/>
+                <outlet property="scrollView" destination="Eem-Pr-gib" id="b9d-ll-4Tc"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aKA-oi-WI3">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <animations/>
+                </imageView>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Eem-Pr-gib">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <animations/>
+                </scrollView>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="aKA-oi-WI3" secondAttribute="trailing" id="AmN-hp-gys"/>
+                <constraint firstAttribute="trailing" secondItem="Eem-Pr-gib" secondAttribute="trailing" id="Cs0-LA-p71"/>
+                <constraint firstItem="Eem-Pr-gib" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="EIS-Nv-5e4"/>
+                <constraint firstItem="aKA-oi-WI3" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="R2P-9c-NYX"/>
+                <constraint firstAttribute="bottom" secondItem="Eem-Pr-gib" secondAttribute="bottom" id="St5-Vh-05r"/>
+                <constraint firstItem="aKA-oi-WI3" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="be1-cU-g7F"/>
+                <constraint firstItem="Eem-Pr-gib" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="hT9-wR-e1A"/>
+                <constraint firstAttribute="bottom" secondItem="aKA-oi-WI3" secondAttribute="bottom" id="oat-YP-WJR"/>
+            </constraints>
+            <point key="canvasLocation" x="221" y="339"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,16 @@
+# Uncomment this line to define a global platform for your project
+# platform :ios, '6.0'
+
+target 'xiushouguzhu_ios' do
+    pod "AFNetworking", "~> 2.0"
+    pod 'AKTabBarController', '~> 1.1.0'
+    pod 'HMSegmentedControl@kennygunie', '~> 1.4.2'
+    pod 'SVProgressHUD', :head
+    pod 'JSONModel', '~> 1.0.1'
+    pod 'SDWebImage', '~> 3.7.1'
+end
+
+target 'xiushouguzhu_iosTests' do
+
+end
+

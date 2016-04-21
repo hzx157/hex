@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MyCouponViewController">
+            <connections>
+                <outlet property="tvCoupon" destination="1QJ-gM-7q6" id="yXe-vR-xAB"/>
+                <outlet property="txtCode" destination="qhJ-JA-aWO" id="p3b-ma-GLu"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="1QJ-gM-7q6">
+                    <rect key="frame" x="17" y="80" width="285" height="424"/>
+                    <animations/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="285" id="UdQ-qv-1lo"/>
+                    </constraints>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="ypD-e0-viU"/>
+                        <outlet property="delegate" destination="-1" id="8ao-jb-pzi"/>
+                    </connections>
+                </tableView>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入优惠码" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qhJ-JA-aWO">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                    <animations/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="wfS-3M-lff"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="vWy-b2-RLJ"/>
+                    </connections>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tU5-Qf-KCf">
+                    <rect key="frame" x="244" y="8" width="68" height="30"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="68" id="EjX-BJ-Zls"/>
+                        <constraint firstAttribute="height" constant="30" id="X2c-h3-YMB"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                    <state key="normal" title="兑换" backgroundImage="通用-按钮">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="btnExchangePressed:" destination="-1" eventType="touchUpInside" id="zwP-K0-BQC"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="优惠码的获取请随时关注袖手的优惠活动" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8wA-ws-qbJ">
+                    <rect key="frame" x="8" y="49" width="304" height="29"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="29" id="uMv-Tp-pVV"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="8wA-ws-qbJ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="6LO-LC-d9g"/>
+                <constraint firstItem="qhJ-JA-aWO" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="CZA-d3-evd"/>
+                <constraint firstItem="tU5-Qf-KCf" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="8" id="KAl-rP-Mmv"/>
+                <constraint firstItem="1QJ-gM-7q6" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="80" id="Maz-rS-Qni"/>
+                <constraint firstAttribute="centerX" secondItem="1QJ-gM-7q6" secondAttribute="centerX" id="NJU-zD-biK"/>
+                <constraint firstAttribute="trailing" secondItem="tU5-Qf-KCf" secondAttribute="trailing" constant="8" id="SWv-V8-EyG"/>
+                <constraint firstAttribute="bottom" secondItem="1QJ-gM-7q6" secondAttribute="bottom" id="XBI-Yb-qdt"/>
+                <constraint firstItem="8wA-ws-qbJ" firstAttribute="top" secondItem="qhJ-JA-aWO" secondAttribute="bottom" constant="5" id="cMa-sG-ScD"/>
+                <constraint firstAttribute="trailing" secondItem="8wA-ws-qbJ" secondAttribute="trailing" constant="8" id="oph-f1-9TE"/>
+                <constraint firstAttribute="trailing" secondItem="qhJ-JA-aWO" secondAttribute="trailing" id="uq4-h4-CZ8"/>
+                <constraint firstItem="qhJ-JA-aWO" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="wwY-b4-vQN"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+            <point key="canvasLocation" x="199" y="321"/>
+        </view>
+        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Bh-bK-hp8">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <subviews>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入优惠码" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sov-Rm-cNY">
+                    <rect key="frame" x="17" y="10" width="230" height="30"/>
+                    <animations/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kem-Jf-LiL">
+                    <rect key="frame" x="251" y="10" width="61" height="30"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="61" id="QiQ-1m-tbD"/>
+                        <constraint firstAttribute="height" constant="30" id="VGB-nn-gNP"/>
+                    </constraints>
+                    <state key="normal" title="兑换" backgroundImage="通用-小按钮">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="useCouponCode:" destination="-1" eventType="touchUpInside" id="Yr4-CB-8dK"/>
+                    </connections>
+                </button>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="kem-Jf-LiL" secondAttribute="trailing" constant="8" id="P2w-cB-hrz"/>
+                <constraint firstAttribute="height" constant="50" id="e6F-jr-fmE"/>
+                <constraint firstItem="kem-Jf-LiL" firstAttribute="top" secondItem="6Bh-bK-hp8" secondAttribute="top" constant="10" id="wFs-le-w3R"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="通用-小按钮" width="119" height="49"/>
+        <image name="通用-按钮" width="295" height="49"/>
+    </resources>
+</document>

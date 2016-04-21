@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ServerViewController">
+            <connections>
+                <outlet property="tvServer" destination="Wjg-0y-rKL" id="C0A-3A-Sbb"/>
+                <outlet property="vcBottom" destination="Y52-8j-Zlb" id="Cu0-Oc-MiR"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="Wjg-0y-rKL">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="454"/>
+                    <animations/>
+                    <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="ei0-eA-zdy"/>
+                        <outlet property="delegate" destination="-1" id="EJR-7l-tb3"/>
+                    </connections>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oJ3-H7-fJQ">
+                    <rect key="frame" x="13" y="441" width="294" height="49"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="294" id="4wa-nZ-VPJ"/>
+                        <constraint firstAttribute="height" constant="49" id="oyL-tW-dXd"/>
+                    </constraints>
+                    <state key="normal" title="我要服务" backgroundImage="通用-按钮">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="wantServer:" destination="-1" eventType="touchUpInside" id="PeQ-qb-h1U"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="首页-标签栏" translatesAutoresizingMaskIntoConstraints="NO" id="Y52-8j-Zlb">
+                    <rect key="frame" x="0.0" y="493" width="320" height="11"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="11" id="dr6-QP-pJF"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Wjg-0y-rKL" secondAttribute="trailing" id="EV5-Ra-0Rf"/>
+                <constraint firstAttribute="bottom" secondItem="Wjg-0y-rKL" secondAttribute="bottom" constant="50" id="Qmu-ew-vJ3"/>
+                <constraint firstAttribute="centerX" secondItem="oJ3-H7-fJQ" secondAttribute="centerX" id="QwC-lA-yHv"/>
+                <constraint firstItem="Wjg-0y-rKL" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="T6P-cN-1E9"/>
+                <constraint firstItem="Y52-8j-Zlb" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="URb-bs-1OS"/>
+                <constraint firstAttribute="trailing" secondItem="Y52-8j-Zlb" secondAttribute="trailing" id="com-6w-aJF"/>
+                <constraint firstItem="Wjg-0y-rKL" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ipN-Ep-EHx"/>
+                <constraint firstAttribute="bottom" secondItem="Y52-8j-Zlb" secondAttribute="bottom" id="mmG-J6-jkz"/>
+                <constraint firstAttribute="bottom" secondItem="oJ3-H7-fJQ" secondAttribute="bottom" constant="14" id="xIe-2d-gVk"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <point key="canvasLocation" x="305" y="436"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="通用-按钮" width="295" height="49"/>
+        <image name="首页-标签栏" width="321" height="11"/>
+    </resources>
+</document>

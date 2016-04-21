@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7531" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="EvaluateCell" id="KGk-i7-Jjw" customClass="EvaluateCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="190"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="我的资料-个人头像" translatesAutoresizingMaskIntoConstraints="NO" id="1GC-L4-YWw">
+                        <rect key="frame" x="12" y="12" width="63" height="63"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="欧阳阿姨" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GNa-l5-DGH">
+                        <rect key="frame" x="83" y="17" width="63" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="年龄:61岁" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KPC-pZ-nVc">
+                        <rect key="frame" x="83" y="51" width="63" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="最近服务:1000次" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="guY-p7-1nl">
+                        <rect key="frame" x="202" y="51" width="101" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="101" id="F6b-k1-XdA"/>
+                            <constraint firstAttribute="height" constant="21" id="bWr-Sd-c2r"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ipI-QS-qwP">
+                        <rect key="frame" x="16" y="93" width="288" height="1"/>
+                        <color key="backgroundColor" red="0.85490196080000003" green="0.85490196080000003" blue="0.85490196080000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="ZaI-y5-m91"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2015-05-23 18:30" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3yq-jc-ZyD">
+                        <rect key="frame" x="149" y="103" width="150" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="F6E-ar-11V"/>
+                            <constraint firstAttribute="width" constant="150" id="Te5-71-4fE"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="这个阿姨活真好。这个阿姨活真好。这个阿姨活真好。这个阿姨活真好。这个阿姨活真好。这个阿姨活真好。" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kpb-LG-hvl">
+                        <rect key="frame" x="16" y="126" width="288" height="55"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="55" id="Ldf-rI-qN7"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="湖南人" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2b0-YO-7Yu">
+                        <rect key="frame" x="147" y="20" width="72" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailingMargin" secondItem="guY-p7-1nl" secondAttribute="trailing" constant="9" id="2t8-GB-y33"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="3yq-jc-ZyD" secondAttribute="trailing" constant="13" id="6bt-xB-g6v"/>
+                    <constraint firstItem="3yq-jc-ZyD" firstAttribute="top" secondItem="ipI-QS-qwP" secondAttribute="bottom" constant="9" id="7Xc-S1-zus"/>
+                    <constraint firstItem="guY-p7-1nl" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="43" id="7pR-tm-CgF"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="ipI-QS-qwP" secondAttribute="trailing" constant="8" id="98M-Ag-hSb"/>
+                    <constraint firstItem="ipI-QS-qwP" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="85" id="HKO-jK-MEN"/>
+                    <constraint firstItem="ipI-QS-qwP" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="8" id="Hkw-KB-voH"/>
+                    <constraint firstItem="Kpb-LG-hvl" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottomMargin" id="L9v-br-SLA"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Kpb-LG-hvl" secondAttribute="trailing" constant="8" id="Vtt-sp-bIR"/>
+                    <constraint firstItem="Kpb-LG-hvl" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="8" id="lV5-aH-MFA"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="ivAunt" destination="1GC-L4-YWw" id="Evz-PX-B61"/>
+                <outlet property="lbAddTime" destination="3yq-jc-ZyD" id="g4z-Bx-u3t"/>
+                <outlet property="lbAge" destination="KPC-pZ-nVc" id="HHv-4J-umR"/>
+                <outlet property="lbContext" destination="Kpb-LG-hvl" id="2XY-wm-lzy"/>
+                <outlet property="lbHometown" destination="2b0-YO-7Yu" id="xGY-8q-VG1"/>
+                <outlet property="lbName" destination="GNa-l5-DGH" id="Oct-rH-iiy"/>
+                <outlet property="lbServerTime" destination="guY-p7-1nl" id="z6Z-rW-yWC"/>
+            </connections>
+            <point key="canvasLocation" x="199" y="312"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="我的资料-个人头像" width="59" height="59"/>
+    </resources>
+</document>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>5C1AC7B7-FC45-494C-935E-B2B095660F3E</string>
+	<key>IDESourceControlProjectName</key>
+	<string>xiushouguzhu_ios</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>79ADD1F838D7FDC6567B1510056BE55495B7F373</key>
+		<string>gitlab.gzinterest.com:root/xiushouguzhu_android.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>xiushouguzhu_ios.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>79ADD1F838D7FDC6567B1510056BE55495B7F373</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>gitlab.gzinterest.com:root/xiushouguzhu_android.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>79ADD1F838D7FDC6567B1510056BE55495B7F373</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>79ADD1F838D7FDC6567B1510056BE55495B7F373</string>
+			<key>IDESourceControlWCCName</key>
+			<string>xiushouguzhu_ios</string>
+		</dict>
+	</array>
+</dict>
+</plist>

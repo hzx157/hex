@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ServerAreaViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3BX-Hu-i9d">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="10"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="10" id="XxH-LM-bcI"/>
+                    </constraints>
+                </imageView>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Mh8-BM-clp">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="服务范围" translatesAutoresizingMaskIntoConstraints="NO" id="4Z5-wS-WS0">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="477"/>
+                            <animations/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="4Z5-wS-WS0" secondAttribute="height" multiplier="320:477" id="MmB-mx-eTd"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <animations/>
+                    <constraints>
+                        <constraint firstItem="4Z5-wS-WS0" firstAttribute="top" secondItem="Mh8-BM-clp" secondAttribute="top" id="Eny-cO-04v"/>
+                        <constraint firstItem="4Z5-wS-WS0" firstAttribute="leading" secondItem="Mh8-BM-clp" secondAttribute="leading" id="fZz-TE-3p1"/>
+                        <constraint firstAttribute="trailing" secondItem="4Z5-wS-WS0" secondAttribute="trailing" id="yFK-kC-e7o"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Mh8-BM-clp" secondAttribute="trailing" id="0Zs-8S-qtS"/>
+                <constraint firstItem="3BX-Hu-i9d" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="6UK-Z7-ihC"/>
+                <constraint firstAttribute="bottom" secondItem="Mh8-BM-clp" secondAttribute="bottom" id="9bl-oF-KR8"/>
+                <constraint firstItem="3BX-Hu-i9d" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Chf-sy-PcX"/>
+                <constraint firstItem="3BX-Hu-i9d" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="M0p-Jx-gXb"/>
+                <constraint firstAttribute="trailing" secondItem="3BX-Hu-i9d" secondAttribute="trailing" id="W5y-G5-QTy"/>
+                <constraint firstItem="Mh8-BM-clp" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ZNE-zd-y6N"/>
+                <constraint firstItem="Mh8-BM-clp" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="fba-Qh-WFq"/>
+                <constraint firstItem="4Z5-wS-WS0" firstAttribute="width" secondItem="3BX-Hu-i9d" secondAttribute="width" id="h8w-0K-Lbu"/>
+                <constraint firstAttribute="trailing" secondItem="3BX-Hu-i9d" secondAttribute="trailing" id="upa-fE-44I"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+            <point key="canvasLocation" x="523" y="337"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="服务范围" width="640" height="954"/>
+    </resources>
+</document>

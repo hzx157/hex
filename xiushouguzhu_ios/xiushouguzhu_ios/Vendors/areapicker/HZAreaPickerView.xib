@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1" customClass="HZAreaPickerView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="266"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="216"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="216" id="XP3-5n-m2u"/>
+                    </constraints>
+                    <connections>
+                        <outlet property="dataSource" destination="1" id="4"/>
+                        <outlet property="delegate" destination="1" id="5"/>
+                    </connections>
+                </pickerView>
+                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Owa-5R-3bi">
+                    <rect key="frame" x="160" y="219" width="160" height="47"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="47" id="fKR-dt-5gZ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <state key="normal" title="确定">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="Commit:" destination="1" eventType="touchUpInside" id="Of8-wk-nlM"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bje-2e-Dzj">
+                    <rect key="frame" x="0.0" y="216" width="320" height="2"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="2" id="z7T-FC-zHC"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wzv-sX-BW3">
+                    <rect key="frame" x="0.0" y="219" width="160" height="47"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="47" id="dsi-Tx-p23"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <state key="normal" title="取消">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="Commit:" destination="1" eventType="touchUpInside" id="knv-K4-Alt"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Owa-5R-3bi" secondAttribute="trailing" id="7tb-iU-ioX"/>
+                <constraint firstAttribute="trailing" secondItem="3" secondAttribute="trailing" id="8fI-AG-y3h"/>
+                <constraint firstItem="3" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="KC2-TJ-2y5"/>
+                <constraint firstItem="bje-2e-Dzj" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="N95-YD-99Y"/>
+                <constraint firstItem="Owa-5R-3bi" firstAttribute="leading" secondItem="Wzv-sX-BW3" secondAttribute="trailing" id="NMZ-Zt-Mbn"/>
+                <constraint firstItem="Wzv-sX-BW3" firstAttribute="top" secondItem="bje-2e-Dzj" secondAttribute="bottom" constant="1" id="Rlz-UW-B33"/>
+                <constraint firstItem="Owa-5R-3bi" firstAttribute="leading" secondItem="Wzv-sX-BW3" secondAttribute="trailing" id="S5b-76-tOY"/>
+                <constraint firstItem="Wzv-sX-BW3" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="Som-qZ-Iac"/>
+                <constraint firstItem="bje-2e-Dzj" firstAttribute="top" secondItem="3" secondAttribute="bottom" id="UoL-wB-HTB"/>
+                <constraint firstAttribute="trailing" secondItem="bje-2e-Dzj" secondAttribute="trailing" id="Zl7-A0-E3K"/>
+                <constraint firstItem="Wzv-sX-BW3" firstAttribute="width" secondItem="Owa-5R-3bi" secondAttribute="width" id="apw-nn-LQ1"/>
+                <constraint firstItem="Owa-5R-3bi" firstAttribute="top" secondItem="bje-2e-Dzj" secondAttribute="bottom" constant="1" id="kLl-vP-1Fm"/>
+                <constraint firstItem="3" firstAttribute="top" secondItem="1" secondAttribute="top" id="wy7-Ah-Fhz"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="btnCommit" destination="Owa-5R-3bi" id="07c-fY-Rzk"/>
+                <outlet property="locatePicker" destination="3" id="6"/>
+            </connections>
+            <point key="canvasLocation" x="199" y="297"/>
+        </view>
+    </objects>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

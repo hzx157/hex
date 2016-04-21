@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController">
+            <connections>
+                <outlet property="topView" destination="Pfr-bg-T4h" id="iUZ-cH-A8P"/>
+                <outlet property="txtCode" destination="nGY-bv-a7r" id="ppI-Ib-ic3"/>
+                <outlet property="vcLogo" destination="TVi-IE-BbF" id="Zso-Bz-keG"/>
+                <outlet property="view" destination="iN0-l3-epB" id="9Nj-cE-FdB"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="64" width="320" height="367"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="会员中心-头像背景" translatesAutoresizingMaskIntoConstraints="NO" id="5MW-xg-TKt">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="137"/>
+                </imageView>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y59-Zf-aFG">
+                    <rect key="frame" x="0.0" y="0.0" width="146" height="71"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="-45"/>
+                    <state key="normal" backgroundImage="首页-会员专享">
+                        <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="fourClick:" destination="-1" eventType="touchUpInside" id="Wg1-oP-1O2"/>
+                    </connections>
+                </button>
+                <button hidden="YES" opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fcg-Qs-vnw">
+                    <rect key="frame" x="0.0" y="0.0" width="146" height="71"/>
+                    <state key="normal" backgroundImage="首页-优惠券">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="fourClick:" destination="-1" eventType="touchUpInside" id="9wM-OS-cRH"/>
+                    </connections>
+                </button>
+                <button hidden="YES" opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p1T-cN-gWs">
+                    <rect key="frame" x="0.0" y="0.0" width="146" height="71"/>
+                    <state key="normal" backgroundImage="首页-新手指引">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="fourClick:" destination="-1" eventType="touchUpInside" id="cSy-R0-s3E"/>
+                    </connections>
+                </button>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g9s-UM-DmS">
+                    <rect key="frame" x="54" y="258" width="212" height="109"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="109" id="SFu-BN-Czb"/>
+                        <constraint firstAttribute="width" constant="212" id="d1M-cl-9XX"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="首页-一键下单">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="oneKey:" destination="-1" eventType="touchUpInside" id="VL5-a3-5v4"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="首页-标签栏" translatesAutoresizingMaskIntoConstraints="NO" id="DJc-mR-3aA">
+                    <rect key="frame" x="0.0" y="356" width="320" height="11"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="11" id="JGI-Fg-Teg"/>
+                        <constraint firstAttribute="width" constant="320" id="nZ3-5m-uw7"/>
+                    </constraints>
+                </imageView>
+                <button hidden="YES" opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pb9-jd-aaN">
+                    <rect key="frame" x="0.0" y="0.0" width="146" height="71"/>
+                    <state key="normal" backgroundImage="首页-服务范围">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="fourClick:" destination="-1" eventType="touchUpInside" id="Vj6-Su-WCg"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pfr-bg-T4h" customClass="SDCycleScrollView">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="187"/>
+                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="187" id="TB5-l9-6tv"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ko9-B3-Fka">
+                    <rect key="frame" x="0.0" y="207" width="320" height="50"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RY9-2c-SaF">
+                            <rect key="frame" x="0.0" y="1" width="320" height="48"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LeV-lZ-cND">
+                                    <rect key="frame" x="247" y="8" width="65" height="32"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="65" id="W8x-tN-TFe"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <state key="normal" title="兑换" backgroundImage="通用-按钮">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="btnExchangePressed:" destination="-1" eventType="touchUpInside" id="vPu-fD-7pR"/>
+                                    </connections>
+                                </button>
+                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入优惠码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nGY-bv-a7r">
+                                    <rect key="frame" x="14" y="0.0" width="223" height="48"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                    <connections>
+                                        <outlet property="delegate" destination="-1" id="KCt-a0-Z2l"/>
+                                    </connections>
+                                </textField>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="nGY-bv-a7r" firstAttribute="top" secondItem="RY9-2c-SaF" secondAttribute="top" id="0vo-Q6-smD"/>
+                                <constraint firstItem="nGY-bv-a7r" firstAttribute="leading" secondItem="RY9-2c-SaF" secondAttribute="leading" constant="14" id="8ak-YA-aTY"/>
+                                <constraint firstAttribute="bottom" secondItem="nGY-bv-a7r" secondAttribute="bottom" id="GrV-6d-Fzc"/>
+                                <constraint firstItem="LeV-lZ-cND" firstAttribute="leading" secondItem="nGY-bv-a7r" secondAttribute="trailing" constant="10" id="HWX-JK-yfM"/>
+                                <constraint firstItem="LeV-lZ-cND" firstAttribute="top" secondItem="RY9-2c-SaF" secondAttribute="top" constant="8" id="RVZ-LT-UHL"/>
+                                <constraint firstAttribute="trailing" secondItem="LeV-lZ-cND" secondAttribute="trailing" constant="8" id="Tsj-g1-pcW"/>
+                                <constraint firstAttribute="bottom" secondItem="LeV-lZ-cND" secondAttribute="bottom" constant="8" id="gYd-wj-8qr"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="RY9-2c-SaF" firstAttribute="leading" secondItem="ko9-B3-Fka" secondAttribute="leading" id="QTK-IS-Ns9"/>
+                        <constraint firstAttribute="trailing" secondItem="RY9-2c-SaF" secondAttribute="trailing" id="RLC-hp-Nwu"/>
+                        <constraint firstAttribute="bottom" secondItem="RY9-2c-SaF" secondAttribute="bottom" constant="1" id="RW9-yF-pdN"/>
+                        <constraint firstItem="RY9-2c-SaF" firstAttribute="top" secondItem="ko9-B3-Fka" secondAttribute="top" constant="1" id="kej-tS-Es2"/>
+                        <constraint firstAttribute="height" constant="50" id="zWy-ox-0TW"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QaY-uo-Id9">
+                    <rect key="frame" x="85" y="279" width="150" height="36"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="0Ab-yH-EoO"/>
+                        <constraint firstAttribute="width" constant="150" id="3ZG-qi-HCH"/>
+                    </constraints>
+                    <state key="normal" title="查看袖手劵" backgroundImage="通用-小按钮2">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="btnNyCouponPressed:" destination="-1" eventType="touchUpInside" id="uo3-XE-tRZ"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Pfr-bg-T4h" secondAttribute="trailing" id="0wi-t7-z67"/>
+                <constraint firstAttribute="trailing" secondItem="ko9-B3-Fka" secondAttribute="trailing" id="4m5-ya-4mF"/>
+                <constraint firstAttribute="trailing" secondItem="DJc-mR-3aA" secondAttribute="trailing" id="5hY-Xw-11V"/>
+                <constraint firstItem="QaY-uo-Id9" firstAttribute="top" secondItem="ko9-B3-Fka" secondAttribute="bottom" constant="22" id="6jB-CX-dhh"/>
+                <constraint firstAttribute="centerX" secondItem="g9s-UM-DmS" secondAttribute="centerX" id="IXw-j7-rNd"/>
+                <constraint firstAttribute="bottom" secondItem="DJc-mR-3aA" secondAttribute="bottom" id="Iz3-ub-fU9"/>
+                <constraint firstItem="DJc-mR-3aA" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="L0D-Nt-9Rw"/>
+                <constraint firstItem="QaY-uo-Id9" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="NfE-7j-fg4"/>
+                <constraint firstItem="Pfr-bg-T4h" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="PeP-th-bjs"/>
+                <constraint firstItem="ko9-B3-Fka" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="SEN-ik-tJF"/>
+                <constraint firstAttribute="bottom" secondItem="g9s-UM-DmS" secondAttribute="bottom" id="Ww0-db-aVj"/>
+                <constraint firstItem="Pfr-bg-T4h" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="fnX-9y-XaX"/>
+                <constraint firstItem="ko9-B3-Fka" firstAttribute="top" secondItem="Pfr-bg-T4h" secondAttribute="bottom" constant="20" id="iBX-1s-xvd"/>
+            </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+            <simulatedTabBarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="143" y="342"/>
+        </view>
+        <view contentMode="scaleToFill" id="TVi-IE-BbF">
+            <rect key="frame" x="0.0" y="0.0" width="115" height="22"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="128.5" y="49"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="会员中心-头像背景" width="320" height="137"/>
+        <image name="通用-小按钮2" width="69" height="32"/>
+        <image name="通用-按钮" width="295" height="49"/>
+        <image name="首页-一键下单" width="281" height="149"/>
+        <image name="首页-优惠券" width="146" height="71"/>
+        <image name="首页-会员专享" width="146" height="71"/>
+        <image name="首页-新手指引" width="146" height="71"/>
+        <image name="首页-服务范围" width="146" height="71"/>
+        <image name="首页-标签栏" width="321" height="11"/>
+    </resources>
+</document>
