@@ -8,6 +8,7 @@
 
 #import "CommonViewController.h"
 #import "HWSDK_Constants.h"
+#import "MobClick.h"
 @interface CommonViewController ()
 
 @end
@@ -43,7 +44,17 @@
 
     [self initUI];
 }
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    
+    [MobClick beginLogPageView:self.title];
+}
 
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    [MobClick endLogPageView:self.title];
+}
 
 - (BOOL)prefersStatusBarHidden
 {
