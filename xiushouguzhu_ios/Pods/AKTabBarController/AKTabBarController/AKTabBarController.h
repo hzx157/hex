@@ -30,7 +30,7 @@
 // View Controllers handled by the tab bar controller.
 @property (nonatomic, strong) NSMutableArray *viewControllers;
 
-
+#pragma mark----修改by阿祥
 //重新修改
 @property (nonatomic,copy)BOOL (^selectBlock)(NSInteger selectedIndex);
 
@@ -110,7 +110,7 @@
 
 // Refresh the Tab Bar
 - (void)loadTabs;
-
+#pragma mark----新增by阿祥
 //添加点击事件修改
 -(void)didSelectTabAtIndex:(NSInteger)index;
 

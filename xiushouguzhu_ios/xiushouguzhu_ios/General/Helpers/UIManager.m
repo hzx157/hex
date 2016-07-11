@@ -21,11 +21,12 @@
 }
 
 
-
+#pragma mark----新增by阿祥
 + (AppDelegate *)appDelegate
 {
     return (AppDelegate *)[UIApplication sharedApplication].delegate;
 }
+#pragma mark----新增by阿祥
 +(BOOL)isLogin{
     return [self appDelegate].sessionId;
 }
@@ -69,6 +70,7 @@
     appDelegate.window.rootViewController = appDelegate.akTabBarController;
     [appDelegate.window makeKeyAndVisible];
     
+    #pragma mark----新增by阿祥
     akTabBarController.selectBlock = ^BOOL(NSInteger selectIndex){
         if(selectIndex == 2||selectIndex == 1){
             if(![UIManager appDelegate].sessionId){

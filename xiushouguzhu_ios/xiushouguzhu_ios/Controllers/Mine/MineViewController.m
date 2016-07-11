@@ -189,6 +189,8 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+#pragma mark----新增by阿祥
     UIViewController *vc;
     if((![UIManager isLogin])&&indexPath.section!=1){
         [SVProgressHUD showInfoWithStatus:@"请先登录"];
@@ -197,6 +199,7 @@
         [self presentViewController:vc animated:YES completion:nil];
         return;
     }
+ //-----结束
     
         
         if (indexPath.section == 0) {
