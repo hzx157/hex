@@ -1,0 +1,15 @@
+//
+//  UnoinPrefixHeader.pch
+//  Union
+//
+//  Created by xiaowuxiaowu on 16/7/11.
+//  Copyright © 2016年 xiaowuxiaowu. All rights reserved.
+//
+
+#ifndef UnoinPrefixHeader_pch
+#define UnoinPrefixHeader_pch
+#import "XWKitMacro.h"
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* UnoinPrefixHeader_pch */

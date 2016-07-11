@@ -1,0 +1,25 @@
+# Uncomment this line to define a global platform for your project
+# platform :ios, '8.0'
+# Uncomment this line if you're using Swift
+# use_frameworks!
+
+target 'Union' do
+pod 'SDWebImage'
+pod 'AFNetworking'
+pod 'MBProgressHUD'
+pod 'Masonry'
+pod 'MJExtension'
+pod 'MJRefresh'
+pod 'CTAssetsPickerController'
+pod 'IQKeyboardManager'
+pod 'OpenShare'
+end
+
+target 'UnionTests' do
+
+end
+
+target 'UnionUITests' do
+
+end
+
